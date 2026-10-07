@@ -1,0 +1,20 @@
+.eyebrow {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: var(--fw-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+}
+
+.brand {
+  color: var(--brand-500);
+}
+
+.muted {
+  color: var(--stone-400);
+}
+
+.inverse {
+  color: var(--brand-400);
+}

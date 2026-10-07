@@ -1,0 +1,48 @@
+.track {
+  display: inline-flex;
+  padding: 0.25rem;
+  border-radius: var(--radius-lg);
+  background-color: var(--surface-muted);
+  gap: 0.25rem;
+  box-sizing: border-box;
+}
+
+.tabButton {
+  all: unset;
+  cursor: pointer;
+  padding: 0.625rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  transition: background-color var(--duration-normal) var(--ease-standard),
+              color var(--duration-normal) var(--ease-standard);
+  white-space: nowrap;
+}
+
+.inactive {
+  color: var(--stone-500);
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.active {
+  color: #fff;
+  box-shadow: var(--shadow-sm);
+}
+
+.toneBrand {
+  background-color: var(--brand-500);
+}
+
+.toneEmerald {
+  background-color: var(--emerald-500);
+}
+
+.toneAmber {
+  background-color: var(--amber-500);
+}
+
+.toneNeutral {
+  background-color: var(--stone-800);
+}

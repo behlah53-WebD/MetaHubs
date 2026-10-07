@@ -1,0 +1,269 @@
+.page {
+  min-height: 100vh;
+  background: var(--surface-page);
+}
+
+/* Security Hero */
+.heroSection {
+  background: #0a1f44;
+  padding: 96px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.gridPattern {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(125, 211, 252, 0.08) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(125, 211, 252, 0.08) 1px, transparent 1px);
+  background-size: 56px 56px;
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 780px;
+}
+
+.heroEyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #7dd3fc;
+}
+
+.heroTitle {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(2.5rem, 5.5vw, 4.25rem);
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+  color: #fff;
+  text-wrap: balance;
+}
+
+.heroHighlight {
+  color: #38bdf8;
+}
+
+.heroSubtitle {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.625;
+  color: #cbd5e1;
+}
+
+.badgesRow {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.badgePill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 9999px;
+  border: 1px solid rgba(125, 211, 252, 0.3);
+  background: rgba(56, 189, 248, 0.08);
+  color: #e0f2fe;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Controls Section */
+.controlsSection {
+  background: #fff;
+  border-bottom: 1px solid var(--border-default);
+  padding: 112px 24px;
+}
+
+.controlsContainer {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.areaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 56px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border-default);
+}
+
+.areaLeft {
+  flex: 1 1 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.areaNum {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: #0284c7;
+}
+
+.areaTitle {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--text-heading);
+}
+
+.areaDesc {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.625;
+  color: var(--text-muted);
+}
+
+.areaGrid {
+  flex: 2 1 480px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 14px;
+}
+
+.areaCard {
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  background: var(--stone-50);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-heading);
+}
+
+.cardDesc {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+/* Documents Section */
+.documentsSection {
+  background: var(--surface-page);
+  border-bottom: 1px solid var(--border-default);
+  padding: 112px 24px;
+}
+
+.documentsContainer {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.docsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 14px;
+}
+
+.docCard {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.docIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #e0f2fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.docText {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.docTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-heading);
+}
+
+.docSub {
+  font-size: 12px;
+  color: var(--stone-500);
+}
+
+.docLink {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0284c7;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.docLink:hover {
+  color: #0369a1;
+}
+
+/* Security FAQ Section */
+.faqSection {
+  background: #fff;
+  border-bottom: 1px solid var(--border-default);
+  padding: 112px 24px;
+}
+
+.faqRow {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.faqLeft {
+  flex: 1 1 300px;
+  min-width: 0;
+}
+
+.faqRight {
+  flex: 2 1 460px;
+  min-width: 0;
+}

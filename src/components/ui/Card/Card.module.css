@@ -1,0 +1,32 @@
+.card {
+  background-color: var(--surface-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-default);
+  box-sizing: border-box;
+  transition: box-shadow var(--duration-slow) var(--ease-standard);
+}
+
+.padNone {
+  padding: 0;
+}
+
+.padSm {
+  padding: 1rem;
+}
+
+.padMd {
+  padding: 1.5rem;
+}
+
+.padLg {
+  padding: 2rem;
+}
+
+.highlighted {
+  border-color: var(--border-brand);
+  box-shadow: var(--shadow-md), 0 0 0 1px var(--brand-200);
+}
+
+.hoverable:hover {
+  box-shadow: var(--shadow-lg);
+}

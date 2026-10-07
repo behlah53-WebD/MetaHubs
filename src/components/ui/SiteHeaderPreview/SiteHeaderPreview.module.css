@@ -1,0 +1,11 @@
+.previewContainer {
+  min-height: 100vh;
+  background: var(--surface-page);
+  display: flex;
+  flex-direction: column;
+}
+
+.previewCanvas {
+  background: #0a1f44;
+  min-height: 64px;
+}

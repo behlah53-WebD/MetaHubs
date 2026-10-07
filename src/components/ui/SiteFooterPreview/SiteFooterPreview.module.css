@@ -1,0 +1,6 @@
+.previewContainer {
+  min-height: 100vh;
+  background: #0a1f44;
+  display: flex;
+  flex-direction: column;
+}

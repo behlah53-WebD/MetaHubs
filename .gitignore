@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Next.js build and cache
+.next/
+out/
+
+# Build output
+build/
+dist/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Archives
+*.7z
+*.zip
+*.rar
+
+# Logs
+*.log
+
+# Hosting
+.vercel/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# System files
+.DS_Store
+Thumbs.db

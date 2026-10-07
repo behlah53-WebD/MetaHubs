@@ -1,0 +1,210 @@
+.page {
+  min-height: 100vh;
+  background: var(--surface-page);
+}
+
+.announcementBar {
+  background: var(--stone-900);
+  color: var(--stone-300);
+  font-size: var(--text-sm);
+  padding: 10px 24px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.announcementLink {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: 64px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid var(--border-default);
+}
+
+.headerInner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-heading);
+  text-decoration: none;
+}
+
+.logoSquare {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: var(--brand-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoText {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+}
+
+.nav {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.navLink {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--stone-600);
+  text-decoration: none;
+  transition: background-color 200ms, color 200ms;
+}
+
+.navLink:hover {
+  background: var(--stone-100);
+  color: var(--stone-900);
+}
+
+/* Hero */
+.heroSection {
+  position: relative;
+  overflow: hidden;
+  background: var(--surface-card);
+  border-bottom: 1px solid var(--border-default);
+}
+
+.heroDots {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(var(--stone-300) 1px, transparent 1px);
+  background-size: 22px 22px;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.heroInner {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 96px 24px 88px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr));
+  gap: 56px;
+  align-items: center;
+}
+
+.heroTextCol {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.heroTitle {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--text-heading);
+  text-wrap: balance;
+}
+
+.heroDesc {
+  margin: 0;
+  max-width: 520px;
+  font-size: var(--text-lg);
+  line-height: 1.625;
+  color: var(--text-muted);
+  text-wrap: pretty;
+}
+
+.heroProof {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: var(--text-sm);
+  color: var(--stone-500);
+}
+
+/* Marquee Systems Strip */
+.marqueeSection {
+  background: var(--surface-page);
+  border-bottom: 1px solid var(--border-default);
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.marqueeLabel {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--stone-500);
+  margin-bottom: 24px;
+}
+
+.marqueeContainer {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+}
+
+.marqueeTrack {
+  display: flex;
+  gap: 56px;
+  width: max-content;
+  animation: nb-marquee 40s linear infinite;
+  align-items: center;
+}
+
+.marqueeItem {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+  color: var(--stone-400);
+  white-space: nowrap;
+}
+
+/* Common Section Container */
+.sectionBlock {
+  padding: 112px 24px;
+  border-bottom: 1px solid var(--border-default);
+}
+
+.sectionContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
